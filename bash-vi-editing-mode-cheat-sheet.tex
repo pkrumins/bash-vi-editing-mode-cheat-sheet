@@ -1,0 +1,245 @@
+% Bash VI Editing Mode Shortcut Cheat Sheet
+%
+% by Peteris Krumins (peter@catonmat.net)
+% http://www.catonmat.net  -  good coders code, great reuse
+%
+% 2008.01.08
+%
+
+\documentclass{article}
+
+\usepackage[left=1.5cm,top=1cm,right=1.5cm,bottom=1cm,nohead,nofoot]{geometry}
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{pdftitle={Bash VI Readline Editing Mode Shortcut Cheat Sheet}}
+\hypersetup{pdfauthor={Peteris Krumins (peter@catonmat.net)}}
+\hypersetup{pdfkeywords={cheat sheet, cheat sheat, cheet sheet, cheet sheat, terminal, command line, readline, read line, vi, keyboard, shortcut, shortcuts, unix, linux}}
+\hypersetup{pdfsubject={http://www.catonmat.net - good coders code, great reuse}}
+\hypersetup{colorlinks}
+
+\pagestyle{empty}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+\Large Readline VI Editing Mode Cheat Sheet \\
+\Large Default Keyboard Shortcuts for Bash
+\end{center}
+
+\vspace{0.4in}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|p{4.5cm}|p{13cm}|}
+\hline
+\large\textbf{Shortcut} & \large\textbf{Description} \\
+\hline
+\multicolumn{3}{|l|}{\small\it{Commands for Moving:}} \\
+\hline
+\textbf{C-a} & beginning-of-line & Move to the beginning of line. \\
+\hline
+\textbf{C-e} & end-of-line & Move to the end of line. \\
+\hline\hline
+\large\textbf{Shortcut} & \large\textbf{Description} \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Switching to Command Mode:}} \\
+\hline
+\textbf{ESC} & Switch to \textbf{command} mode. \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Commands for Entering Input mode:}} \\
+\hline
+\textbf{i} & Insert before cursor. \\
+\hline
+\textbf{a} & Insert after cursor. \\
+\hline
+\textbf{I} & Insert at the beginning of line. \\
+\hline
+\textbf{A} & Insert at the end of line. \\
+\hline
+\textbf{c{\textless}movement command{\textgreater}} & Change text of a movement command \textbf{{\textless}movement command{\textgreater}} (see below). \\
+\hline
+\textbf{C} & Change text to the end of line (equivalent to \textbf{c\$}). \\
+\hline
+\textbf{cc} or \textbf{S} & Change current line (equivalent to \textbf{0c\$}). \\
+\hline
+\textbf{s} & Delete a single character under the cursor and enter input mode (equivalent to \textbf{c[SPACE]}) . \\
+\hline
+\textbf{r} & Replaces a single character under the cursor (without leaving command mode). \\
+\hline
+\textbf{R} & Replaces characters under the cursor. \\
+\hline
+\textbf{v} & Edit (and execute) the current command in a text editor (an editor in \$VISUAL and \$EDITOR variables or vi). \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Basic Movement Commands (in \textbf{command} mode):}} \\
+\hline
+\textbf{l} or \textbf{SPACE} & Move one character right. \\
+\hline
+\textbf{h} & Move one character left. \\
+\hline
+\textbf{w} & Move one word or token right. \\
+\hline
+\textbf{b} & Move one word or token left. \\
+\hline
+\textbf{W} & Move one non-blank word right. \\
+\hline
+\textbf{B} & Move one non-blank word left. \\
+\hline
+\textbf{e} & Move to the end of the current word. \\
+\hline
+\textbf{E} & Move to the end of the current non-blank word. \\
+\hline
+\textbf{0} & Move to the beginning of line. \\
+\hline
+\textbf{\^} & Move to the first non-blank character of line. \\
+\hline
+\textbf{\$} & Move to the end of line. \\
+\hline
+\textbf{\%} & Move to the corresponding opening/closing bracket (()'s, []'s and \{\}'s). \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Character Finding Commands (these are also Movement Commands):}} \\
+\hline
+\textbf{f\textit{c}} & Move right to the next occurance of \textit{c}. \\
+\hline
+\textbf{F\textit{c}} & Move left to the previous occurance of \textit{c}. \\
+\hline
+\textbf{t\textit{c}} & Move right to the next occurance of \textit{c}, then one char backward. \\
+\hline
+\textbf{T\textit{c}} & Move left to the previous occurance of \textit{c}, then one char forward. \\
+\hline
+\textbf{;} & Redo the last character finding command. \\
+\hline
+\textbf{,} & Redo the last character finding command in opposite direction. \\
+\hline
+\textbf{\textbar} & Move to the \textit{n}-th column (you may specify the argument \textit{n} by typing it on number keys, for example, \textbf{20\textbar}). \\
+\hline
+
+\end{tabular}
+
+%---------- examples
+
+%\begin{center}
+%\large Examples
+%\end{center}
+%
+%\begin{tabular}{|p{4.5cm}|p{13cm}|}
+%
+%\hline
+%\large\textbf{Example Shortcut} & \large\textbf{Example Description} \\
+%\hline
+%
+%\hline
+%
+%\end{tabular}
+
+\vfill
+
+\framebox{\parbox{4.5in}{
+A cheat sheet by \textbf{Peteris Krumins} (peter@catonmat.net), 2008.
+
+\href{http://www.catonmat.net}{http://www.catonmat.net} - good coders code, great reuse
+
+\vspace{2mm}
+\footnotesize{Released under GNU Free Document License.}}}
+
+
+%---------------------------------------------------------------------------
+
+\newpage
+
+\mbox{}
+\begin{tabular}{|p{4.5cm}|p{13cm}|}
+\hline
+\multicolumn{2}{|l|}{\small\it{Deletion Commands:}} \\
+\hline
+\textbf{x} & Delete a single character under the cursor. \\
+\hline
+\textbf{X} & Delete a character before the cursor. \\
+\hline
+\textbf{d{\textless}movement command{\textgreater}} & Delete text of a movement command \textbf{{\textless}movement command{\textgreater}} (see above). \\
+\hline
+\textbf{D} & Delete to the end of the line (equivalent to \textbf{d\$}). \\
+\hline
+\textbf{dd} & Delete current line (equivalent to \textbf{0d\$}). \\
+\hline
+\textbf{CTRL-w} & Delete the previous word. \\
+\hline
+\textbf{CTRL-u} & Delete from the cursor to the beginning of line. \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Undo, Redo and Copy/Paste Commands:}} \\
+\hline
+\textbf{u} & Undo previous text modification. \\
+\hline
+\textbf{U} & Undo all previous text modifications on the line. \\
+\hline
+\textbf{.} & Redo the last text modification. \\
+\hline
+\textbf{y{\textless}movement command{\textgreater}} & Yank a movement into buffer (copy). \\
+\hline
+\textbf{yy} & Yank the whole line. \\
+\hline
+\textbf{p} & Insert the yanked text at the cursor (paste). \\
+\hline
+\textbf{P} & Insert the yanked text before the cursor. \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Commands for Command History:}} \\
+\hline
+\textbf{k} & Move backward one command in history. \\
+\hline
+\textbf{j} & Move forward one command in history. \\
+\hline
+\textbf{G} & Move to the history line \textit{n} (you may specify the argument \textit{n} by typing it on number keys, for example, \textbf{15G}). \\
+\hline
+\textbf{/\textit{string}} or \textbf{CTRL-r} & Search history backward for a command matching \textit{string}. \\
+\hline
+\textbf{?\textit{string}} or \textbf{CTRL-s} & Search history forward for a command matching \textit{string} (remember that on most machines CTRL-s stops the output to the terminal (CTRL-q starts output) and you might need to change it with stty command). \\
+\hline
+\textbf{n} & Repeat search in the same direction as previous. \\
+\hline
+\textbf{N} & Repeat search in the opposite direction as previous. \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Completion Commands:}} \\
+\hline
+\textbf{TAB} or \textbf{CTRL-i} or \textbf{=} & List possible completions. \\
+\hline
+\textbf{*} & Insert all possible completions. \\
+\hline
+\multicolumn{2}{|l|}{\small\it{Miscellaneous Commands:}} \\
+\hline
+\textbf{$\sim$} & Invert the case of the character under cursor, and move a character right. \\
+\hline
+\textbf{\#} & Prepend \textbf{\#} (comment character) to the line and send it to the history list. \\
+\hline
+\textbf{\_} &  Inserts the \textbf{n}-th word of the previous command in the current line. \\
+\hline
+\textbf{0, 1, 2, ...} & Sets the numeric argument. \\
+\hline
+\textbf{CTRL-v} & Insert a character literally (quoted insert). \\
+\hline
+\textbf{CTRL-t} & Transpose (exchange) two characters. \\
+\hline
+\end{tabular}
+
+\vspace{2mm}
+\begin{center}
+\large Examples and Tips
+\end{center}
+
+\begin{itemize}
+\item Some of the commands take a \textbf{{\textless}movement command{\textgreater}}. These commands apply the movement to themselves. For example, \textbf{d\$} would use \$ as a movement, which moves the cursor to the end of the line, thus, the whole \textbf{d\$} would delete text from the current cursor position to the end of the line. Another example, a command \textbf{c\textit{fA}} would use \textbf{fA} as a movement, which finds the next occurance of the character {\bf A}, thus, the whole command would change the line up to character {\bf A}.
+\item Use \textbf{CTRL-v} to insert character literally, for example, \textbf{CTRL-v CTRL-r} would insert CTRL-r in the command line.
+\item See \textbf{man bash}, \textbf{man readline}, and built in \textbf{bind} command for modifying the default behavior!
+\end{itemize}
+
+\vfill
+
+\framebox{\parbox{5in}{
+A cheat sheet by \textbf{Peteris Krumins} (peter@catonmat.net), 2008.
+
+\href{http://www.catonmat.net}{http://www.catonmat.net} - good coders code, great reuse
+
+\vspace{2mm}
+\footnotesize{Released under GNU Free Document License.}}}
+
+\end{document}
+
